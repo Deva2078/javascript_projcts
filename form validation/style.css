@@ -1,0 +1,87 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Center the form */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+/* Form Container */
+.form-container {
+  background: #fff;
+  padding: 35px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(71, 191, 95, 0.2);
+  text-align: center;
+}
+
+/* Heading (optional) */
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Fields */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input Focus Effect */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 8px rgba(79, 70, 229, 0.3);
+}
+
+/* Error Message */
+#error {
+  color: red;
+  font-size: 14px;
+  margin: 8px 0;
+  min-height: 20px;
+}
+
+/* Login Button */
+.form-container input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.form-container input[type="submit"]:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 400px) {
+  .form-container {
+    width: 90%;
+    padding: 25px;
+  }
+}
